@@ -1,0 +1,42 @@
+.speech-container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #D0DDD0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.speech-container h2 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.speech-container input[type="file"] {
+    display: block;
+    margin: 15px auto;
+    font-size: 16px;
+}
+
+.speech-container button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #727D73;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+}
+
+.speech-container button:hover {
+    background-color: #AAB99A;
+
+}
+
+.speech-container p {
+    margin-top: 15px;
+    font-size: 16px;
+}

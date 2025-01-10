@@ -1,0 +1,142 @@
+[
+    {
+        "text": "hi my name is Alice Brown ID 54321 I can't access my online health records due to a login issue can you help reset my account",
+        "fields": {
+            "name": "Alice Brown ID 54321",
+            "id_number": null,
+            "contact_number": null,
+            "contact_preference": null,
+            "type_of_request": null,
+            "specific_request_details": "hi my name is Alice Brown ID 54321 I can't access my online health records due to a login issue can you help reset my account",
+            "urgency_level": "Normal",
+            "department": "General"
+        },
+        "formatted_request": "Customer request: Hi my name is alice brown id 54321 i can't access my online health records due to a login issue can you help reset my account"
+    },
+    {
+        "text": "hello I'm Ethan Miller phone 5553210987 does my insurance cover physiotherapy for sports injuries please confirm",
+        "fields": {
+            "name": "Ethan Miller",
+            "id_number": null,
+            "contact_number": null,
+            "contact_preference": null,
+            "type_of_request": "Insurance Coverage Inquiry",
+            "specific_request_details": "hello I'm Ethan Miller phone 5553210987 does my insurance cover physiotherapy for sports injuries please confirm",
+            "urgency_level": "Normal",
+            "department": "Insurance"
+        },
+        "formatted_request": "Customer request: Hello i'm ethan miller phone 5553210987 does my insurance cover physiotherapy for sports injuries please confirm"
+    },
+    {
+        "text": "hi my name is John Doe I'm having trouble accessing my account on your platform whenever I try to log in I get an error message saying access denied can you please help me resolve this",
+        "fields": {
+            "name": "John Doe",
+            "id_number": null,
+            "contact_number": null,
+            "contact_preference": null,
+            "type_of_request": null,
+            "specific_request_details": "hi my name is John Doe I'm having trouble accessing my account on your platform whenever I try to log in I get an error message saying access denied can you please help me resolve this",
+            "urgency_level": "Normal",
+            "department": "Technical Support"
+        },
+        "formatted_request": "Customer request: Hi my name is john doe i'm having trouble accessing my account on your platform whenever i try to log in i get an error message saying access denied can you please help me resolve this"
+    },
+    {
+        "text": "hello I'm Michael Smith ID 67890 my recent invoice shows extra charges for lab tests can you explain or correct this",
+        "fields": {
+            "name": "Michael Smith",
+            "id_number": null,
+            "contact_number": null,
+            "contact_preference": null,
+            "type_of_request": null,
+            "specific_request_details": "hello I'm Michael Smith ID 67890 my recent invoice shows extra charges for lab tests can you explain or correct this",
+            "urgency_level": "Normal",
+            "department": "General"
+        },
+        "formatted_request": "Customer request: Hello i'm michael smith id 67890 my recent invoice shows extra charges for lab tests can you explain or correct this"
+    },
+    {
+        "text": "can you tell me if my insurance covers dental care",
+        "fields": {
+            "name": null,
+            "id_number": null,
+            "contact_number": null,
+            "contact_preference": null,
+            "type_of_request": "Insurance Coverage Inquiry",
+            "specific_request_details": "Dental care coverage",
+            "urgency_level": "Normal",
+            "department": "Insurance"
+        },
+        "formatted_request": "Customer request: Can you tell me if my insurance covers dental care"
+    },
+    {
+        "text": "hi this is Olivia Johnson phone 555-987-6543 I'm interested in upgrading my health plan to include dental coverage can you share options",
+        "fields": {
+            "name": "Olivia Johnson",
+            "id_number": null,
+            "contact_number": "555-987-6543",
+            "contact_preference": null,
+            "type_of_request": null,
+            "specific_request_details": "Dental care coverage",
+            "urgency_level": "Normal",
+            "department": "General"
+        },
+        "formatted_request": "Customer request: Hi this is olivia johnson phone 555-987-6543 i'm interested in upgrading my health plan to include dental coverage can you share options"
+    },
+    {
+        "text": "hi my name is Sarah Johnson ID 12345 6789 I need to confirm if my insurance covers dental care like cleanings or fillings to avoid unexpected costs please let me know what's included you can reach me at 555-123-4567 if more details are needed",
+        "fields": {
+            "name": "Sarah Johnson",
+            "id_number": "12345 6789",
+            "contact_number": "555-123-4567",
+            "contact_preference": null,
+            "type_of_request": "Insurance Coverage Inquiry",
+            "specific_request_details": "Dental care coverage",
+            "urgency_level": "Normal",
+            "department": "Insurance"
+        },
+        "formatted_request": "Customer request: Hi my name is sarah johnson id 12345 6789 i need to confirm if my insurance covers dental care like cleanings or fillings to avoid unexpected costs please let me know what's included you can reach me at 555-123-4567 if more details are needed"
+    },
+    {
+        "text": "hi this is Eva Martinez ID 77008 18889 I forgot my password and Pantry set it through the app can you help me regain access",
+        "fields": {
+            "name": null,
+            "id_number": null,
+            "contact_number": null,
+            "contact_preference": null,
+            "type_of_request": null,
+            "specific_request_details": "hi this is Eva Martinez ID 77008 18889 I forgot my password and Pantry set it through the app can you help me regain access",
+            "urgency_level": "Normal",
+            "department": "Technical Support"
+        },
+        "formatted_request": "Customer request: Hi this is eva martinez id 77008 18889 i forgot my password and pantry set it through the app can you help me regain access"
+    },
+    {
+        "text": "hi this is Olivia Johnson phone 555-987-6543 I'm interested in upgrading my health plan to include dental coverage can you share options",
+        "fields": {
+            "name": "Olivia Johnson",
+            "id_number": null,
+            "contact_number": "555-987-6543",
+            "contact_preference": null,
+            "type_of_request": null,
+            "specific_request_details": "Dental care coverage",
+            "urgency_level": "Normal",
+            "department": "General"
+        },
+        "formatted_request": "Customer request: Hi this is olivia johnson phone 555-987-6543 i'm interested in upgrading my health plan to include dental coverage can you share options"
+    },
+    {
+        "text": "hi this is Eva Martinez ID 77008 18889 I forgot my password and Pantry set it through the app can you help me regain access",
+        "fields": {
+            "name": null,
+            "id_number": null,
+            "contact_number": null,
+            "contact_preference": null,
+            "type_of_request": null,
+            "specific_request_details": "hi this is Eva Martinez ID 77008 18889 I forgot my password and Pantry set it through the app can you help me regain access",
+            "urgency_level": "Normal",
+            "department": "Technical Support"
+        },
+        "formatted_request": "Customer request: Hi this is eva martinez id 77008 18889 i forgot my password and pantry set it through the app can you help me regain access"
+    }
+]
