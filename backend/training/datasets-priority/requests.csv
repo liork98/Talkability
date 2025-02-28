@@ -1,0 +1,11 @@
+text,label
+"I need an ambulance immediately, my father is unconscious!","Urgent"
+"My prescription is about to run out, can I get a refill soon?","Normal"
+"I'm just curious about the hospital's visiting hours.","Light"
+"Help! There's a gas leak in my house, I need emergency services!","Urgent"
+"Can I schedule a doctor’s appointment for next month?","Light"
+"My child has a high fever, what should I do?","Urgent"
+"I would like to update my insurance details.","Normal"
+"When is the next available slot for a general check-up?","Normal"
+"The website is not loading properly, I need assistance.","Light"
+"My mother is in severe pain, we need urgent medical attention!","Urgent"

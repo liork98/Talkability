@@ -1,0 +1,69 @@
+.request-container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #720455; /* Background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.request-container h2 {
+    margin-bottom: 15px;
+    text-align: center;
+    color: #D0DDD0; /* Header text color */
+}
+
+.request-container textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.request-container button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #F0F0D7; /* Button background */
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    border-radius: 25px;
+}
+
+.request-container button:hover {
+    background-color: #fff0f9; /* Button hover */
+}
+
+.response-container {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.response-container h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.response-container pre {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+}
