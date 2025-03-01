@@ -36,5 +36,13 @@ Thumbs.db
 
 # Ignore Python virtual environments
 venv/
+.venv/
 backend/training/venv/backend/talkability_app/bert-urgency-classification/
 backend/talkability_app/bert-department-classification/
+backend/training/datasets/test.csv
+backend/training/datasets/requests.csv
+backend/training/datasets-priority/requests.csv
+backend/training/datasets-priority/test.csv
+backend/records
+backend/talkability_app/bert-department-classification
+backend/talkability_app/bert-urgency-classification

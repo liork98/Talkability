@@ -1,5 +1,6 @@
 import re
-from flask import Blueprint, request, jsonify
+from flask import Blueprint, request, jsonify, Flask
+# from .main import talkability_app
 from .services.speech_to_text import convert_speech_to_text
 from .services.text_processing import format_request
 from .services.request_parsing import extract_request_fields
@@ -7,14 +8,17 @@ from transformers import AutoModelForSequenceClassification, AutoTokenizer
 import json
 import os
 import torch
+# from flask_cors import CORS
+# CORS(talkability_app)
+from flask import Blueprint, jsonify
 
+routes = Blueprint('routes', __name__)
 REQUESTS_FILE = "requests.json"
 
 # Define departments and urgency levels
 departments = [
-    "Sales", "Insurance", "Billing", "General",
-    "Appointments", "Medical Records", "Technical Support", "Patient Support", "Pharmacy",
-    "Nursing Services", "Lab Services", "Health Insurance Claims", "IT Support"
+    "Technical Support", "Billing", "Sales", "Appointments",
+    "Medical Records", "Pharmacy"
 ]
 urgency_levels = ["Urgent", "Normal", "Light"]
 
@@ -33,13 +37,13 @@ priorityModel = AutoModelForSequenceClassification.from_pretrained(priority_mode
 model.eval()
 priorityModel.eval()
 
-routes = Blueprint('routes', __name__)
+# routes = Blueprint('routes', __name__)
 
 def classify_text(text, candidate_labels):
     try:
         # Tokenizing the text input
         inputs = departments_tokenizer(text, return_tensors="pt", truncation=True, padding=True)
-        print("Tokenized Input:", inputs)
+        # print("Tokenized Input:", inputs)
         outputs = model(**inputs)
         print("Model Output:", outputs)
         logits = outputs.logits

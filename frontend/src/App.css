@@ -20,9 +20,11 @@ body {
 }
 
 .app-logo {
-  width: 600px;
+  width: 300px;
   height: auto;
-  margin-bottom: 30px;
+  margin-bottom: -30px;
+  align-content: center;
+  text-align: center;
 }
 
 /* Main Content Styles */

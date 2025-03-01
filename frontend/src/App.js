@@ -1,11 +1,11 @@
 // App.js
 import React, { useState, useEffect } from 'react';
 import SpeechToText from './components/SpeechToText';
-import SubmitRequest from './components/SubmitRequest';
 import './App.css';
-import logo from './logo.png'; // Import the logo
 import axios from 'axios';
 import Sidebar from './components/Sidebar'; // Import the Sidebar component
+const API_BASE_URL = 'http://127.0.0.1:5000';
+
 
 const App = () => {
     const [transcribedText, setTranscribedText] = useState('');
@@ -13,11 +13,10 @@ const App = () => {
     const [requests, setRequests] = useState([]); // Stores all requests
     const [filteredRequests, setFilteredRequests] = useState([]); // Stores requests filtered by department
 
-    // Fetch all requests from the backend
     useEffect(() => {
         const fetchRequests = async () => {
             try {
-                const response = await axios.get('http://127.0.0.1:5000/get-requests');
+                const response = await axios.get(`${API_BASE_URL}/get-requests`);
                 setRequests(response.data);
             } catch (error) {
                 console.error('Error fetching requests:', error);
@@ -41,7 +40,6 @@ const App = () => {
         if (activeTab === 'home') {
             return (
                 <>
-                    <img src={logo} alt="Talkability Logo" className="app-logo"/>
                     <SpeechToText setTranscribedText={setTranscribedText}/>
                 </>
             );
@@ -64,9 +62,6 @@ const App = () => {
                                 <p>
                                     <strong>Request Type:</strong> {req.type_of_request || 'N/A'}
                                 </p>
-                                {/*<p>*/}
-                                {/*    <strong>Details:</strong> {req.fields.specific_request_details}*/}
-                                {/*</p>*/}
                                 <p>
                                     <strong>Urgency:</strong> {req.urgency_level}
                                 </p>
@@ -85,7 +80,7 @@ const App = () => {
 
     return (
         <div className="app-container">
-            <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} /> {/* Use the Sidebar component */}
+            <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} />
             <div className="content">{renderContent()}</div>
         </div>
     );
